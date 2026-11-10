@@ -75,8 +75,9 @@ added as they are completed and verified.
 
 ## 🌐 Portfolio
 
-- Professional CV: [View My CV](YOUR-PORTFOLIO-URL)
-- LinkedIn: [Professional Profile](YOUR-LINKEDIN-URL)
+- Professional CV: [View My CV](https://github.com/cyrusndirangu)
+- LinkedIn: [Cyrus Kabiro Ndirangu](https://www.linkedin.com/in/cyrus-kabiro-ndirangu/)
+
 
 ## 📩 Contact
 
