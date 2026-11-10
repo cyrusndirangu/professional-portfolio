@@ -1,0 +1,670 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional CV of Cyrus Kabiro Ndirangu - Operations, Logistics and NEMT Dispatch Specialist.">
+<title>Cyrus Kabiro Ndirangu | Professional CV</title>
+
+<style>
+:root {
+    --navy: #0f172a;
+    --blue: #2563eb;
+    --light: #f1f5f9;
+    --text: #334155;
+    --muted: #64748b;
+    --border: #e2e8f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+.toolbar {
+    max-width: 1000px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background: var(--navy);
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: var(--blue);
+}
+
+.cv {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    box-shadow: 0 10px 35px #00000012;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    background: var(--navy);
+    color: white;
+    padding: 32px 25px;
+}
+
+.name {
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    color: #93c5fd;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.sidebar-section {
+    margin-top: 27px;
+}
+
+.sidebar-section h2 {
+    color: #93c5fd;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 8px;
+    margin-bottom: 13px;
+}
+
+.contact-item {
+    margin-bottom: 12px;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.contact-item label {
+    display: block;
+    color: #94a3b8;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar a {
+    color: #bfdbfe;
+    text-decoration: none;
+}
+
+.skill-group {
+    margin-bottom: 16px;
+}
+
+.skill-group h3 {
+    font-size: 12px;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tags span {
+    background: #1e293b;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+    font-size: 11px;
+    padding: 4px 7px;
+    border-radius: 4px;
+}
+
+.education-item {
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.education-item strong {
+    display: block;
+    color: white;
+}
+
+.education-item small {
+    color: #cbd5e1;
+}
+
+/* MAIN CONTENT */
+
+.main {
+    padding: 38px 35px;
+}
+
+.section {
+    margin-bottom: 27px;
+}
+
+.section h2 {
+    color: var(--navy);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 8px;
+    margin-bottom: 14px;
+}
+
+.section h2::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 15px;
+    background: var(--blue);
+    margin-right: 9px;
+}
+
+.summary {
+    font-size: 13px;
+    text-align: justify;
+}
+
+.job {
+    border-left: 2px solid var(--blue);
+    padding-left: 17px;
+    margin-bottom: 23px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.job h3 {
+    font-size: 15px;
+    color: var(--navy);
+}
+
+.date {
+    font-size: 11px;
+    background: #eff6ff;
+    color: var(--blue);
+    padding: 3px 9px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 12px;
+    color: var(--blue);
+    font-weight: bold;
+    margin: 3px 0 8px;
+}
+
+.job ul {
+    padding-left: 18px;
+}
+
+.job li {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.info-card {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 12px;
+}
+
+.info-card strong {
+    display: block;
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+
+.footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 25px;
+}
+
+/* MOBILE */
+
+@media(max-width: 750px) {
+    body {
+        padding: 0;
+    }
+
+    .toolbar {
+        padding: 12px;
+        margin: 0;
+    }
+
+    .cv {
+        grid-template-columns: 1fr;
+        border-radius: 0;
+    }
+
+    .sidebar {
+        padding: 28px 23px;
+    }
+
+    .main {
+        padding: 28px 23px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .job-header {
+        flex-direction: column;
+    }
+}
+
+/* PRINT / PDF */
+
+@media print {
+    @page {
+        size: A4;
+        margin: 10mm;
+    }
+
+    body {
+        background: white;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .toolbar {
+        display: none !important;
+    }
+
+    .cv {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+        grid-template-columns: 30% 70%;
+    }
+
+    .sidebar {
+        background: var(--navy) !important;
+        color: white !important;
+    }
+
+    .section, .job, .education-item {
+        break-inside: avoid;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="toolbar">
+    <button onclick="window.print()">
+        Print / Save CV as PDF
+    </button>
+</div>
+
+<div class="cv">
+
+<!-- LEFT SIDEBAR -->
+
+<aside class="sidebar">
+
+    <h1 class="name">Cyrus Kabiro Ndirangu</h1>
+
+    <p class="tagline">
+        OPERATIONS, LOGISTICS & NEMT DISPATCH SPECIALIST
+    </p>
+
+    <section class="sidebar-section">
+        <h2>Contact Details</h2>
+
+        <div class="contact-item">
+            <label>Location</label>
+            Nairobi, Kenya
+        </div>
+
+        <div class="contact-item">
+            <label>Phone</label>
+            <a href="tel:+254740257505">+254 740 257 505</a>
+        </div>
+
+        <div class="contact-item">
+            <label>Email</label>
+            <a href="mailto:cyrusndirangu100@gmail.com">
+                cyrusndirangu100@gmail.com
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <label>Postal Address</label>
+            P.O. Box 489, Othaya
+        </div>
+
+        <div class="contact-item">
+            <label>LinkedIn</label>
+            <a href="https://linkedin.com" target="_blank"
+               rel="noopener noreferrer">View Profile</a>
+        </div>
+
+        <div class="contact-item">
+            <label>Work Preference</label>
+            Open to Remote Opportunities
+        </div>
+    </section>
+
+    <section class="sidebar-section">
+        <h2>Core Expertise</h2>
+
+        <div class="skill-group">
+            <h3>Operations & Administration</h3>
+            <div class="tags">
+                <span>Data Entry</span>
+                <span>Data Annotation</span>
+                <span>Quality Control</span>
+                <span>Client Management</span>
+                <span>Records Management</span>
+                <span>Customer Support</span>
+                <span>Administrative Support</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <h3>NEMT & Logistics</h3>
+            <div class="tags">
+                <span>NEMT Dispatch</span>
+                <span>Trip Scheduling</span>
+                <span>Real-Time Dispatch</span>
+                <span>Route Optimization</span>
+                <span>Multi-Load Coordination</span>
+                <span>Will-Call Management</span>
+                <span>Driver Management</span>
+                <span>No-Show Documentation</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <h3>Marketing & Communication</h3>
+            <div class="tags">
+                <span>Social Media Marketing</span>
+                <span>Lead Generation</span>
+                <span>Client Communication</span>
+                <span>Digital Marketing</span>
+                <span>Front Desk Operations</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar-section">
+        <h2>Software & Technology</h2>
+
+        <div class="tags">
+            <span>RouteGenie</span>
+            <span>TripMaster</span>
+            <span>Bambi</span>
+            <span>Google Maps</span>
+            <span>GPS Tracking</span>
+            <span>Microsoft Excel</span>
+            <span>Google Sheets</span>
+        </div>
+    </section>
+
+    <section class="sidebar-section">
+        <h2>Compliance</h2>
+
+        <div class="tags">
+            <span>HIPAA Compliance</span>
+            <span>Medicaid Regulations</span>
+            <span>NEMT Broker Portals</span>
+            <span>Data Confidentiality</span>
+        </div>
+    </section>
+
+    <section class="sidebar-section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+            <strong>BSc in Population Health</strong>
+            <small>Kenyatta University</small><br>
+            <small>2021 – 2024</small>
+        </div>
+
+        <div class="education-item">
+            <strong>KCSE – Grade B Plain</strong>
+            <small>Witima Secondary School</small><br>
+            <small>2019</small>
+        </div>
+    </section>
+
+</aside>
+
+<!-- RIGHT MAIN CONTENT -->
+
+<main class="main">
+
+    <section class="section">
+        <h2>Professional Summary</h2>
+
+        <p class="summary">
+            Detail-oriented and versatile Operations Professional
+            with experience across healthcare transportation
+            logistics, Non-Emergency Medical Transportation (NEMT)
+            dispatch, marketing coordination, administrative
+            operations and data management. Skilled in managing
+            high-volume operational workflows, coordinating
+            transportation schedules, optimizing routes, maintaining
+            accurate client databases and supporting business
+            communication. Proficient in specialized NEMT platforms
+            including RouteGenie, TripMaster and Bambi, with a strong
+            understanding of HIPAA compliance, Medicaid NEMT
+            regulations and data confidentiality. Experienced in
+            coordinating over 50 daily transportation trips across
+            ambulatory, wheelchair and stretcher service levels.
+            Highly organized, technology-oriented and prepared
+            for remote and on-site professional opportunities.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+
+            <div class="job-header">
+                <h3>Marketing & Operations Coordinator</h3>
+                <span class="date">Jan 2024 – Present</span>
+            </div>
+
+            <p class="company">
+                Solid Gardens Limited — Kenya
+            </p>
+
+            <ul>
+                <li>
+                    Serve as the central administrative contact,
+                    coordinating front-desk interactions, client
+                    intake and corporate communication channels.
+                </li>
+
+                <li>
+                    Plan and manage social media marketing activities
+                    to strengthen online visibility and generate
+                    potential customer leads.
+                </li>
+
+                <li>
+                    Maintain and update client databases, service
+                    records, payment status logs and customer
+                    information.
+                </li>
+
+                <li>
+                    Support daily business operations, customer
+                    communication and administrative coordination.
+                </li>
+
+                <li>
+                    Manage multiple operational responsibilities
+                    independently, ensuring organized workflows
+                    and accurate record keeping.
+                </li>
+            </ul>
+        </div>
+
+        <div class="job">
+
+            <div class="job-header">
+                <h3>NEMT Dispatch Specialist</h3>
+                <span class="date">Prior Experience</span>
+            </div>
+
+            <p class="company">
+                Healthcare Transportation Operations
+            </p>
+
+            <ul>
+                <li>
+                    Coordinated over 50 daily non-emergency medical
+                    transportation trips across ambulatory,
+                    wheelchair and stretcher service levels.
+                </li>
+
+                <li>
+                    Managed trip scheduling, real-time dispatching,
+                    driver assignments and daily transportation
+                    coordination.
+                </li>
+
+                <li>
+                    Optimized transportation routes to improve
+                    scheduling efficiency and reduce unnecessary
+                    travel time.
+                </li>
+
+                <li>
+                    Coordinated multi-load transportation schedules,
+                    same-day trip additions, cancellations and
+                    unexpected operational changes.
+                </li>
+
+                <li>
+                    Managed will-call requests, passenger no-show
+                    documentation and trip status updates.
+                </li>
+
+                <li>
+                    Used RouteGenie, TripMaster, Bambi, GPS tracking
+                    and Google Maps to support dispatch operations.
+                </li>
+
+                <li>
+                    Maintained confidentiality and accurate
+                    transportation records in accordance with
+                    HIPAA guidelines and applicable Medicaid
+                    NEMT requirements.
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="section">
+        <h2>Technical Competencies</h2>
+
+        <div class="info-grid">
+
+            <div class="info-card">
+                <strong>Transportation Systems</strong>
+                RouteGenie, TripMaster, Bambi,
+                GPS Tracking and Google Maps.
+            </div>
+
+            <div class="info-card">
+                <strong>Data & Analytics</strong>
+                Microsoft Excel, Google Sheets,
+                Data Entry, Data Annotation
+                and Quality Control.
+            </div>
+
+            <div class="info-card">
+                <strong>Healthcare Compliance</strong>
+                HIPAA Guidelines, Medicaid
+                NEMT Regulations and
+                Data Confidentiality.
+            </div>
+
+            <div class="info-card">
+                <strong>Business Operations</strong>
+                Administrative Support,
+                Customer Relations, Marketing,
+                Client Intake and Records Management.
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Professional Strengths</h2>
+
+        <ul style="padding-left:20px; font-size:13px;">
+            <li>Strong organizational and time-management skills.</li>
+            <li>Attention to detail and data accuracy.</li>
+            <li>Effective written and verbal communication.</li>
+            <li>Ability to manage multiple operational tasks.</li>
+            <li>Problem-solving and adaptability.</li>
+            <li>Independent remote-work readiness.</li>
+            <li>Commitment to confidentiality and professionalism.</li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        Cyrus Kabiro Ndirangu | Professional CV
+    </footer>
+
+</main>
+
+</div>
+
+</body>
+</html>
